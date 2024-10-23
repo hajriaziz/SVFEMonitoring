@@ -12,6 +12,7 @@ final Map<String, String> enUs = {
   "msg_fingerprint_to": "fingerprint to access",
   "msg_use_fingerprint": "Use fingerprint to access",
   "msg_username_or_email": "Username or email",
+  "password": "*************",
 // terminal Screen
   "lbl_26": "26%",
   "lbl_400": " 400 ",

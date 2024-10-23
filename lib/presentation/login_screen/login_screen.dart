@@ -114,7 +114,7 @@ class LoginScreenState extends State<LoginScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 18.h),
+                  padding: EdgeInsets.only(left: 12.h),
                   child: Text(
                     "msg_username_or_email".tr,
                     style: theme.textTheme.titleSmall,
@@ -129,8 +129,8 @@ class LoginScreenState extends State<LoginScreen> {
                       hintText: "msg_example_example_com".tr,
                       textInputType: TextInputType.emailAddress,
                       contentPadding: EdgeInsets.symmetric(
-                        horizontal: 12.h,
-                        vertical: 6.h,
+                        horizontal: 13.h,
+                        vertical: 12.h,
                       ),
                       validator: (value) {
                         if (value == null ||
@@ -170,12 +170,13 @@ class LoginScreenState extends State<LoginScreen> {
                     style: theme.textTheme.titleSmall,
                   ),
                 ),
-                SizedBox(height: 2.h),
+                SizedBox(height: 12.h),
                 Padding(
                   padding: EdgeInsets.only(right: 2.h),
                   child: Consumer<LoginProvider>(
                     builder: (context, provider, child) {
                       return CustomTextFormField(
+                        hintText: "*************************",
                         controller: provider.airplaneController,
                         textInputAction: TextInputAction.done,
                         suffix: InkWell(
